@@ -1,13 +1,23 @@
 import Breadcrumbs from './Breadcrumbs'
+import Heading from './Heading'
 
-const PageHeader = ({ heading, paragraph }) => {
+const PageHeader = ({ heading, paragraph, level = 'h2' }) => {
   return (
-    <header className="border-2 border-red-500">
-      <div className="pt-[120px] border-2 border-green-500">
-        <h2 className="mt-20 w-3/5 border-2 border-blue-500">{heading}</h2>
-        {paragraph && <p>{paragraph}</p>}
-
-        <Breadcrumbs />
+    <header className="custom-container">
+      <div className="pt-[120px]">
+        <Heading as={level} className="mt-20 w-3/5">
+          {heading}
+        </Heading>
+        {paragraph ? (
+          <div className="flex justify-between items-center">
+            <p className="font-robotoSlab font-light">{paragraph}</p>
+            <Breadcrumbs />
+          </div>
+        ) : (
+          <div className="flex justify-end">
+            <Breadcrumbs />
+          </div>
+        )}
       </div>
     </header>
   )

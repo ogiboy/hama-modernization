@@ -9,7 +9,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-family-montserrat), sans-serif;
+    font-family: var(--font-montserrat), sans-serif;
     font-weight: 700;
   }
 
@@ -44,17 +44,13 @@
   }
 
   p {
-    font-weight: 300;
+    /* font-weight: 300; */
     font-size: 20px;
     line-height: 36px;
   }
 
   a {
     text-decoration: none;
-  }
-
-  li {
-    list-style: none;
   }
 
   a {
@@ -75,4 +71,21 @@
   strong {
     font-weight: 700;
   }
+}
+
+@layer components {
+  .custom-container {
+    @apply px-[15px] lg:w-[1200px] md:w-[992px] sm:w-[750px] mx-auto;
+  }
+}
+
+.counter-list {
+  counter-reset: my-counter;
+}
+
+.counter-list li::before {
+  counter-increment: my-counter;
+  content: counter(my-counter) ') ';
+  margin-right: 8px;
+  font-size: medium;
 }

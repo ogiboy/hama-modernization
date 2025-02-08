@@ -1,10 +1,13 @@
-import PageHeader from '../components/PageHeader'
+import PageHeader from '@/app/components/PageHeader'
+import Services from '@/app/components/Services'
 
-const Services = () => {
+const ServicesPage = () => {
   return (
-    <main className="border-2 border-red-500">
+    <main>
       <PageHeader heading="HAMA" paragraph="ENDÜSTRİYEL MUTFAK HİZMETLERİ" />
+
+      <Services />
     </main>
   )
 }
-export default Services
+export default ServicesPage

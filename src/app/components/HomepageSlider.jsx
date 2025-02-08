@@ -17,52 +17,6 @@ const HomepageSlider = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false)
   const intervalRef = useRef(null)
   let sliderInterval = 5000
-
-  const startSlideShow = () => {
-    if (!intervalRef.current) {
-      intervalRef.current = setInterval(() => {
-        if (slideIndex < 5) {
-          setSlideIndex((prevIndex) => prevIndex + 1)
-        } else {
-          setSlideIndex(0)
-        }
-      }, sliderInterval)
-    }
-  }
-
-  const stopSlideShow = () => {
-    clearInterval(intervalRef.current)
-    intervalRef.current = null
-  }
-
-  useEffect(() => {
-    if (isImageLoaded) {
-      startSlideShow()
-    }
-
-    return () => stopSlideShow()
-  }, [isImageLoaded])
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true)
-  }
-
-  const handleLeftArrow = () => {
-    if (slideIndex > 0) {
-      setSlideIndex((prevIndex) => prevIndex - 1)
-    } else {
-      setSlideIndex(5)
-    }
-  }
-
-  const handleRightArrow = () => {
-    if (slideIndex < 5) {
-      setSlideIndex((prevIndex) => prevIndex + 1)
-    } else {
-      setSlideIndex(0)
-    }
-  }
-
   const slideImages = [
     {
       id: 1,
@@ -96,45 +50,90 @@ const HomepageSlider = () => {
     },
   ]
 
+  const startSlideShow = () => {
+    if (!intervalRef.current) {
+      intervalRef.current = setInterval(() => {
+        setSlideIndex((prevIndex) => (prevIndex + 1) % slideImages.length)
+      }, sliderInterval)
+    }
+  }
+
+  const stopSlideShow = () => {
+    clearInterval(intervalRef.current)
+    intervalRef.current = null
+  }
+
+  useEffect(() => {
+    if (isImageLoaded) {
+      startSlideShow()
+    }
+
+    return () => stopSlideShow()
+  }, [isImageLoaded])
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true)
+  }
+
+  const handleLeftArrow = () => {
+    setSlideIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : slideImages.length - 1
+    )
+  }
+
+  const handleRightArrow = () => {
+    setSlideIndex((prevIndex) =>
+      prevIndex < slideImages.length - 1 ? prevIndex + 1 : 0
+    )
+  }
+
   return (
-    <div className="border-2 border-orange-700 max-h-[940px] h-screen w-screen flex justify-start items-end">
-      <div className="z-10 self-start">
+    <div className="max-h-[940px] h-screen w-screen cursor-default select-none">
+      <div className="z-10 w-full h-screen absolute">
         <Image
           src={slideImages[slideIndex].src}
           alt={slideImages[slideIndex].alt}
           placeholder="blur"
           fill
+          // objectFit="cover"
           onLoad={() => {
             handleImageLoad()
           }}
         />
       </div>
-      <div className="border-2 border-green-600 w-[666px] h-[351px] bg-softblueBg z-20">
+      <div className="w-[780px] h-[442px] bg-softblueBg font-montserrat z-20 absolute -bottom-20 flex flex-col justify-around items-start pl-4">
         <div>
-          <p>ENDÜSTRİYEL MUTFAK</p>
-          <p className="text-[58px]">{slideImages[slideIndex].alt}</p>
+          <p className="tracking-[2px] font-normal whitespace-nowrap">
+            ENDÜSTRİYEL MUTFAK
+          </p>
+          <p className="text-[58px] font-bold text-wrap w-5/12 border-2 border-red-500">
+            {slideImages[slideIndex].alt}
+          </p>
         </div>
-        <div>
+        <div className="border-2 border-orange-600 h-16 w-72 flex justify-start items-start gap-3">
           <Image
             src={leftArrow}
-            alt="sol"
+            alt="sol ok"
             width={50}
             height={50}
             onClick={() => {
               handleLeftArrow()
             }}
+            className="hover:cursor-pointer"
           />
           <Image
             src={rightArrow}
-            alt="sağ"
+            alt="sağ ok"
             width={50}
             height={50}
             onClick={() => {
               handleRightArrow()
             }}
+            className="hover:cursor-pointer"
           />
         </div>
       </div>
+      <div className="bg-white w-full pb-8 bg-dividerDark bg-repeat-x z-50 absolute -bottom-20"></div>
     </div>
   )
 }

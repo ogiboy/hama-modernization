@@ -1,17 +1,15 @@
-import Breadcrumbs from '../components/Breadcrumbs'
-import ContactDetails from '../components/ContactDetails'
-import GoogleMaps from '../components/GoogleMaps'
+import ContactDetails from '@/app/components/ContactDetails'
+import GoogleMaps from '@/app/components/GoogleMaps'
+import PageHeader from '@/app/components/PageHeader'
 
 const ContactUs = () => {
   return (
-    <main className="border-2 border-red-500">
-      <div className="pt-[120px] border-2 border-green-500">
-        <h3 className="mt-20 w-3/5 border-2 border-blue-500">
-          Projeniz mi var? Bize ulaşın
-        </h3>
-
-        <Breadcrumbs />
-      </div>
+    <main className="custom-container">
+      <PageHeader
+        heading="Projeniz mi var? Bize ulaşın"
+        level="h3"
+        paragraph=""
+      />
 
       <GoogleMaps />
 

@@ -2,7 +2,7 @@ import { GoogleMapsEmbed } from '@next/third-parties/google'
 
 const Map = () => {
   return (
-    <section className="w w-4/6 mx-auto my-14">
+    <section className="custom-container mx-auto my-14">
       <GoogleMapsEmbed
         mode="place"
         q="Zuhal+Caddesi,No:46,D:29"

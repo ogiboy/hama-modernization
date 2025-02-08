@@ -1,17 +1,11 @@
 import { FaGooglePlusG, FaTwitter, FaFacebookF } from 'react-icons/fa'
-import Image from 'next/image'
-
-import { Roboto_Slab, Montserrat } from 'next/font/google'
-
-import blackWave from '../../../public/black-wave.png'
-import whiteWave from '../../../public/white-small-wave.png'
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-[#0C0C0C] bg-[url('/divider-white.png')] bg-repeat-x border-2 border-red-800 border-dashed">
+    <footer className="text-white bg-[#0C0C0C] bg-dividerWhite bg-repeat-x border-2 border-red-800 border-dashed">
       <address className="text-center mt-[150px] flex items-baseline justify-center gap-5 flex-wrap">
         <article className="w-[400px]">
-          <h3 className="pr-7 uppercase bg-[url('/white-small-wave.png')] bg-no-repeat bg-bottom">
+          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom">
             Projenizi Konuşun
           </h3>
 
@@ -23,7 +17,7 @@ const Footer = () => {
         </article>
 
         <article className="w-[400px]">
-          <h3 className="pr-7 uppercase bg-[url('/white-small-wave.png')] bg-no-repeat bg-bottom">
+          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom">
             Bize Ulaşın
           </h3>
 
@@ -33,7 +27,7 @@ const Footer = () => {
         </article>
 
         <div className="w-[400px]">
-          <h3 className="pr-7 uppercase bg-[url('/white-small-wave.png')] bg-no-repeat bg-bottom">
+          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom">
             Bizi Takip Edin
           </h3>
 
