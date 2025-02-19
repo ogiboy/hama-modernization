@@ -78,14 +78,14 @@ const Services = () => {
         HİZMETLERİMİZ
       </h1>
       <article className="custom-container mt-[65px] min-h-[550px] text-[#333] transition-opacity ease-in-out duration-1000">
-        <div className="border-[1px] border-[#dbdbdb] flex justify-between items-center flex-nowrap mb-[70px]">
+        <div className="border-[1px] border-[#dbdbdb] border-collapse flex justify-between items-center flex-nowrap mb-[70px]">
           {serviceItems.map((item, index) => {
             return (
               <button
                 key={item.id}
                 type="button"
                 onClick={(e) => handleButtons(e.target.innerHTML)}
-                className={`border-[1px] border-[#dbdbdb] py-[21px] pl-[20px] font-semibold text-lg grow hover:bg-mainColor hover:text-white transition-colors duration-500 ease-in-out ${
+                className={`border-[1px] border-[#dbdbdb] border-collapse py-[21px] pl-[20px] font-semibold text-lg grow hover:bg-mainColor hover:text-white transition-colors duration-500 ease-in-out ${
                   selectedService === index
                     ? 'bg-black text-white cursor-default'
                     : ''

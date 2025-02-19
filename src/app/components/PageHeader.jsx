@@ -3,7 +3,7 @@ import Heading from './Heading'
 
 const PageHeader = ({ heading, paragraph, level = 'h2' }) => {
   return (
-    <header className="custom-container">
+    <section className="custom-container">
       <div className="pt-[120px]">
         <Heading as={level} className="mt-20 w-3/5">
           {heading}
@@ -19,7 +19,7 @@ const PageHeader = ({ heading, paragraph, level = 'h2' }) => {
           </div>
         )}
       </div>
-    </header>
+    </section>
   )
 }
 export default PageHeader

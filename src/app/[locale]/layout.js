@@ -8,6 +8,7 @@ import { notFound } from 'next/navigation'
 
 import MainNavbar from '../components/MainNavbar'
 import Footer from '../components/Footer'
+import ToTop from '../components/ToTop'
 
 export const metadata = {
   title: 'Hama Endüstriyel Mutfak',
@@ -42,9 +43,10 @@ export default async function RootLayout({ children, params }) {
       lang={locale}
       className={`${roboto_slab.variable} ${montserrat.variable}`}
     >
-      <body className="antialiased">
+      <body className="antialiased scroll-smooth">
         <NextIntlClientProvider messages={messages}>
           <MainNavbar />
+          <ToTop />
           {children}
           <Footer />
         </NextIntlClientProvider>

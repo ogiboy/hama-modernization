@@ -2,10 +2,10 @@ import { FaGooglePlusG, FaTwitter, FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-[#0C0C0C] bg-dividerWhite bg-repeat-x border-2 border-red-800 border-dashed">
-      <address className="text-center mt-[150px] flex items-baseline justify-center gap-5 flex-wrap">
-        <article className="w-[400px]">
-          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom">
+    <footer className="text-white bg-[#0C0C0C] bg-dividerWhite bg-repeat-x font-robotoSlab">
+      <address className="custom-container text-center pt-[150px] flex items-baseline justify-between flex-wrap not-italic">
+        <article className="w-fit">
+          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom pb-[28px]">
             Projenizi Konuşun
           </h3>
 
@@ -16,8 +16,8 @@ const Footer = () => {
           <a href="mailto:info@hamamutfak.com">info@hamamutfak.com</a>
         </article>
 
-        <article className="w-[400px]">
-          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom">
+        <article className="w-fit">
+          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom pb-[28px]">
             Bize Ulaşın
           </h3>
 
@@ -26,8 +26,8 @@ const Footer = () => {
           </p>
         </article>
 
-        <div className="w-[400px]">
-          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom">
+        <div className="w-fit">
+          <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom pb-[28px]">
             Bizi Takip Edin
           </h3>
 
@@ -46,15 +46,19 @@ const Footer = () => {
       </address>
 
       <section className="w-full h-[302px] mt-[45px] bg-buildingDark bg-no-repeat">
-        <div className="w-full h-full text-[#222] flex justify-around items-end">
-          <p className="text-[16px]">
+        <div className="custom-container w-full h-full text-[#222] flex justify-around items-end">
+          <p className="text-[16px] text-[#8d8d8d] leading-[36px] font-light">
             Copyright © 2019 Hama Endüstriyel Mutfak Sanayi Ve Ticaret Limited
             Şirketi. Tüm hakları saklıdır.
           </p>
 
-          <p className="text-[16px]">
+          <p className="text-[16px] text-[#8d8d8d] leading-[36px]">
             Design by:{' '}
-            <a target="_blank" href="https://demarkelabs.com/">
+            <a
+              className="text-mainColor hover:text-white"
+              target="_blank"
+              href="https://demarkelabs.com/"
+            >
               De Marke Labs
             </a>
           </p>

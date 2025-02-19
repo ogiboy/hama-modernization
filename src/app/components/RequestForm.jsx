@@ -14,7 +14,7 @@ const RequestForm = () => {
         <input
           type="text"
           placeholder="Adınız Soyadınız"
-          className="border-b-2 border-[#c2c2c2] w-full h-6 text-lg text-[#222] pb-[10px] mb-[30px]"
+          className="border-b-2 border-[#c2c2c2] w-full h-6 text-lg text-[#222] pb-[10px] mb-[30px] outline-none"
           autoComplete="name"
           name="name"
           required
@@ -23,7 +23,7 @@ const RequestForm = () => {
         <input
           type="email"
           placeholder="E-Mail Adresiniz"
-          className="border-b-2 border-[#c2c2c2] w-full h-6 text-lg text-[#222] pb-[10px] mb-[30px]"
+          className="border-b-2 border-[#c2c2c2] w-full h-6 text-lg text-[#222] pb-[10px] mb-[30px] outline-none"
           autoComplete="email"
           name="email"
           required

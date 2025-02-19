@@ -88,7 +88,7 @@ const HomepageSlider = () => {
   }
 
   return (
-    <div className="max-h-[940px] h-screen w-screen cursor-default select-none">
+    <div className="max-h-[940px] h-screen w-full cursor-default select-none">
       <div className="z-10 w-full h-screen absolute">
         <Image
           src={slideImages[slideIndex].src}
@@ -101,36 +101,38 @@ const HomepageSlider = () => {
           }}
         />
       </div>
-      <div className="w-[780px] h-[442px] bg-softblueBg font-montserrat z-20 absolute -bottom-20 flex flex-col justify-around items-start pl-4">
-        <div>
-          <p className="tracking-[2px] font-normal whitespace-nowrap">
-            ENDÜSTRİYEL MUTFAK
-          </p>
-          <p className="text-[58px] font-bold text-wrap w-5/12 border-2 border-red-500">
-            {slideImages[slideIndex].alt}
-          </p>
-        </div>
-        <div className="border-2 border-orange-600 h-16 w-72 flex justify-start items-start gap-3">
-          <Image
-            src={leftArrow}
-            alt="sol ok"
-            width={50}
-            height={50}
-            onClick={() => {
-              handleLeftArrow()
-            }}
-            className="hover:cursor-pointer"
-          />
-          <Image
-            src={rightArrow}
-            alt="sağ ok"
-            width={50}
-            height={50}
-            onClick={() => {
-              handleRightArrow()
-            }}
-            className="hover:cursor-pointer"
-          />
+      <div className="w-[780px] h-[442px] z-20 absolute -bottom-20">
+        <div className="bg-softblueBg w-full h-full flex flex-col justify-around items-start">
+          <div className="ml-[34px]">
+            <p className="tracking-[2px] font-normal font-montserrat text-white text-xl whitespace-nowrap">
+              ENDÜSTRİYEL MUTFAK
+            </p>
+            <p className="text-[43px] text-white font-bold font-montserrat leading-[72px] whitespace-nowrap">
+              {slideImages[slideIndex].alt}
+            </p>
+          </div>
+          <div className="h-16 w-72 ml-[34px] flex justify-start items-start gap-3">
+            <Image
+              src={leftArrow}
+              alt="sol ok"
+              width={50}
+              height={50}
+              onClick={() => {
+                handleLeftArrow()
+              }}
+              className="hover:cursor-pointer"
+            />
+            <Image
+              src={rightArrow}
+              alt="sağ ok"
+              width={50}
+              height={50}
+              onClick={() => {
+                handleRightArrow()
+              }}
+              className="hover:cursor-pointer"
+            />
+          </div>
         </div>
       </div>
       <div className="bg-white w-full pb-8 bg-dividerDark bg-repeat-x z-50 absolute -bottom-20"></div>

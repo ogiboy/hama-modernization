@@ -1,10 +1,37 @@
 import Image from 'next/image'
-
-import { Link } from '@/i18n/routing'
+import NavLink from './NavLink'
 
 const MainNavbar = () => {
+  const navLinks = [
+    {
+      id: 1,
+      href: '/',
+      text: 'Anasayfa',
+    },
+    {
+      id: 2,
+      href: '/about',
+      text: 'Kurumsal',
+    },
+    {
+      id: 3,
+      href: '/services',
+      text: 'Hizmetlerimiz',
+    },
+    {
+      id: 4,
+      href: '/work',
+      text: 'Ürünlerimiz',
+    },
+    {
+      id: 5,
+      href: '/contact-us',
+      text: 'İletişim',
+    },
+  ]
+
   return (
-    <header className="w-full h-[100px] flex justify-evenly items-center bg-mainColor font-montserrat text-white uppercase absolute top-4 z-50">
+    <header className="custom-container w-full h-[100px] flex justify-evenly items-center bg-mainColor font-montserrat text-white uppercase absolute top-4 z-50">
       <Image
         src="/logo.png"
         width={175}
@@ -13,28 +40,20 @@ const MainNavbar = () => {
         className=""
       />
 
-      <nav className="h-full pl-4 pr-4 pt-6">
+      <nav className="h-full py-[25px] px-[15px]">
         <ul className="h-full w-[800px] flex justify-between items-center flex-wrap">
-          <li>
-            <span className="text-xs">01.</span>
-            <Link href="/">Anasayfa</Link>
-          </li>
-          <li>
-            <span className="text-xs">02.</span>
-            <Link href="/about">Kurumsal</Link>
-          </li>
-          <li>
-            <span className="text-xs">03.</span>
-            <Link href="/services">Hizmetlerimiz</Link>
-          </li>
-          <li>
-            <span className="text-xs">04.</span>
-            <Link href="/work">Ürünlerimiz</Link>
-          </li>
-          <li>
-            <span className="text-xs">05.</span>
-            <Link href="/contact-us">İletişim</Link>
-          </li>
+          {navLinks.map((navItem, index) => {
+            return (
+              <li key={navItem.id}>
+                <span className="text-xs">0{index + 1}.</span>
+                <NavLink
+                  href={navItem.href}
+                  text={navItem.text}
+                  className={`hover:underline`}
+                />
+              </li>
+            )
+          })}
         </ul>
       </nav>
     </header>
