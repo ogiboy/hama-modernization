@@ -1,7 +1,19 @@
-import Image from 'next/image'
+'use client'
+
 import NavLink from './NavLink'
+import StickyNavbar from './StickyNavbar'
+import TopNavbar from './TopNavbar'
+
+import { usePathname } from '@/i18n/routing'
+import { useEffect, useState } from 'react'
+import { useScroll, useMotionValueEvent, useMotionValue } from 'motion/react'
 
 const MainNavbar = () => {
+  const pathname = usePathname()
+  const { scrollYProgress } = useScroll()
+  const navMode = useMotionValue('top')
+  const [isNavSticky, setIsNavSticky] = useState(false)
+
   const navLinks = [
     {
       id: 1,
@@ -30,33 +42,35 @@ const MainNavbar = () => {
     },
   ]
 
+  useMotionValueEvent(scrollYProgress, 'change', (value) => {
+    navMode.set(value * 100 > 10 ? 'fixed' : 'top')
+  })
+
+  useEffect(() => {
+    const navFunc = (value) => {
+      setIsNavSticky(value === 'fixed')
+    }
+
+    const unsubY = navMode.on('change', navFunc)
+
+    return () => unsubY()
+  }, [])
+
   return (
-    <header className="custom-container w-full h-[100px] flex justify-evenly items-center bg-mainColor font-montserrat text-white uppercase absolute top-4 z-50">
-      <Image
-        src="/logo.png"
-        width={175}
-        height={50}
-        alt="brand logo"
-        className=""
+    <>
+      <StickyNavbar
+        navLinks={navLinks}
+        pathname={pathname}
+        scrollYProgress={scrollYProgress}
+        isNavSticky={isNavSticky}
       />
 
-      <nav className="h-full py-[25px] px-[15px]">
-        <ul className="h-full w-[800px] flex justify-between items-center flex-wrap">
-          {navLinks.map((navItem, index) => {
-            return (
-              <li key={navItem.id}>
-                <span className="text-xs">0{index + 1}.</span>
-                <NavLink
-                  href={navItem.href}
-                  text={navItem.text}
-                  className={`hover:underline`}
-                />
-              </li>
-            )
-          })}
-        </ul>
-      </nav>
-    </header>
+      <TopNavbar
+        navLinks={navLinks}
+        pathname={pathname}
+        isNavSticky={isNavSticky}
+      />
+    </>
   )
 }
 export default MainNavbar

@@ -88,7 +88,7 @@ const HomepageSlider = () => {
   }
 
   return (
-    <div className="max-h-[940px] h-screen w-full cursor-default select-none">
+    <div className="max-h-[940px] h-screen w-full cursor-default select-none overflow-hidden">
       <div className="z-10 w-full h-screen absolute">
         <Image
           src={slideImages[slideIndex].src}
@@ -135,7 +135,6 @@ const HomepageSlider = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white w-full pb-8 bg-dividerDark bg-repeat-x z-50 absolute -bottom-20"></div>
     </div>
   )
 }

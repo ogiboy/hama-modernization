@@ -7,6 +7,7 @@ import { useActionState } from 'react'
 
 const RequestForm = () => {
   const [state, formAction] = useActionState(handleSubmit, { message: null })
+
   return (
     <>
       <h5>Talepleriniz</h5>
@@ -32,7 +33,7 @@ const RequestForm = () => {
           name="message"
           id="message"
           placeholder="Mesajınız"
-          className="border-b-2 border-[#c2c2c2] w-full h-[202px] text-lg text-[#222] pb-[10px] mb-[30px] resize-none"
+          className="border-b-2 border-[#c2c2c2] w-full h-[202px] text-lg text-[#222] pb-[10px] mb-[30px] resize-none outline-none"
           required
         ></textarea>
         {state.message && <p>{state.message}</p>}

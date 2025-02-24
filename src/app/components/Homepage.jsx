@@ -41,11 +41,10 @@ const Homepage = () => {
   ]
 
   return (
-    <main className="font-robotoSlab">
+    <main className="font-robotoSlab ">
       <HomepageSlider />
 
-      {/* <div className="z-50 min-h-96 bg-white border-2 border-red-500"></div> */}
-
+      <div className="bg-white w-full pb-8 bg-dividerDark bg-repeat-x z-50 absolute -bottom-20"></div>
       <article className="custom-container mt-[110px]">
         <div className="w-1/2 mx-auto text-[142px] text-mainColor flex justify-between items-baseline">
           <Image src={design} alt="design" />
