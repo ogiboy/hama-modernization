@@ -77,7 +77,7 @@ const Services = () => {
       <h1 className="bg-blackWave bg-no-repeat bg-bottom text-center font-montserrat">
         HİZMETLERİMİZ
       </h1>
-      <article className="custom-container mt-[65px] min-h-[550px] text-[#333] transition-opacity ease-in-out duration-1000">
+      <article className="custom-container mt-[65px] min-h-[550px] text-[#333] transition-all ease-in-out duration-1000">
         <div className="border-[1px] border-[#dbdbdb] border-collapse flex justify-between items-center flex-nowrap mb-[70px]">
           {serviceItems.map((item, index) => {
             return (

@@ -3,10 +3,6 @@ import Services from './Services'
 
 import Image from 'next/image'
 
-import { LuPencilRuler } from 'react-icons/lu'
-import { TfiRulerAlt2 } from 'react-icons/tfi'
-import { RiScissorsLine } from 'react-icons/ri'
-
 import design from '../../../public/home-images/design.svg'
 import pencil from '../../../public/home-images/pencil-cup.svg'
 import ruler from '../../../public/home-images/ruler.svg'
@@ -44,7 +40,7 @@ const Homepage = () => {
     <main className="font-robotoSlab ">
       <HomepageSlider />
 
-      <div className="bg-white w-full pb-8 bg-dividerDark bg-repeat-x z-50 absolute -bottom-20"></div>
+      <div className="bg-white w-full h-[50px] pb-8 bg-dividerDark bg-repeat-x"></div>
       <article className="custom-container mt-[110px]">
         <div className="w-1/2 mx-auto text-[142px] text-mainColor flex justify-between items-baseline">
           <Image src={design} alt="design" />

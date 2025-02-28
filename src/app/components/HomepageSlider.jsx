@@ -11,6 +11,7 @@ import slide5 from '../../../public/home-slider-images/slide5.jpg'
 import slide6 from '../../../public/home-slider-images/slide6.jpg'
 
 import { useState, useEffect, useRef } from 'react'
+import { motion } from 'motion/react'
 
 const HomepageSlider = () => {
   const [slideIndex, setSlideIndex] = useState(0)
@@ -88,8 +89,15 @@ const HomepageSlider = () => {
   }
 
   return (
-    <div className="max-h-[940px] h-screen w-full cursor-default select-none overflow-hidden">
-      <div className="z-10 w-full h-screen absolute">
+    <div className="max-h-[940px] h-[98vh] w-full cursor-default select-none overflow-hidden relative">
+      <motion.div
+        key={slideIndex}
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.5, ease: 'easeInOut' }}
+        className="absolute inset-0 z-10 w-full h-screen"
+      >
         <Image
           src={slideImages[slideIndex].src}
           alt={slideImages[slideIndex].alt}
@@ -100,17 +108,32 @@ const HomepageSlider = () => {
             handleImageLoad()
           }}
         />
-      </div>
-      <div className="w-[780px] h-[442px] z-20 absolute -bottom-20">
-        <div className="bg-softblueBg w-full h-full flex flex-col justify-around items-start">
-          <div className="ml-[34px]">
+      </motion.div>
+
+      <div className="w-[780px] h-[442px] z-20 absolute bottom-0">
+        <motion.div
+          key={slideIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 3, ease: 'easeInOut' }}
+          className="bg-softblueBg w-full h-full flex flex-col justify-evenly items-start pl-[15%] relative top-[25%] -left-[15%]"
+        >
+          <motion.div
+            key={slideIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 3.5, ease: 'easeInOut' }}
+            className="ml-[34px]"
+          >
             <p className="tracking-[2px] font-normal font-montserrat text-white text-xl whitespace-nowrap">
               ENDÜSTRİYEL MUTFAK
             </p>
-            <p className="text-[43px] text-white font-bold font-montserrat leading-[72px] whitespace-nowrap">
+            <p className="text-[46px] w-1/2 text-white uppercase font-bold font-montserrat leading-[72px] whitespace-normal">
               {slideImages[slideIndex].alt}
             </p>
-          </div>
+          </motion.div>
           <div className="h-16 w-72 ml-[34px] flex justify-start items-start gap-3">
             <Image
               src={leftArrow}
@@ -133,7 +156,7 @@ const HomepageSlider = () => {
               className="hover:cursor-pointer"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

@@ -3,8 +3,6 @@ import Image from 'next/image'
 import { Link } from '@/i18n/routing'
 import { motion } from 'motion/react'
 
-// sticky top-0 left-0 right-0
-
 const StickyNavbar = ({ scrollYProgress, navLinks, pathname, isNavSticky }) => {
   return (
     <motion.header
@@ -25,7 +23,7 @@ const StickyNavbar = ({ scrollYProgress, navLinks, pathname, isNavSticky }) => {
           borderRadius: '1px',
         }}
       />
-      <nav className="custom-container py-[25px] px-[15px] w-full h-full flex justify-around items-center  font-montserrat text-white bg-mainColor uppercase absolute top-4 z-50">
+      <nav className="custom-container py-[25px] px-[15px] w-full h-full flex justify-around items-center  font-montserrat text-white uppercase absolute z-50">
         <Link className="flex justify-center" href="/">
           <Image src="/logo.png" width={236} height={66} alt="brand logo" />
         </Link>
