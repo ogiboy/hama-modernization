@@ -1,10 +1,14 @@
 import RequestForm from './RequestForm'
 
+import { useTranslations } from 'next-intl'
+
 const ContactDetails = () => {
+  const t = useTranslations('contact-us')
+
   return (
     <section className="flex justify-between items-start py-[110px]">
       <div className="px-4 w-3/5">
-        <h5>Ofis</h5>
+        <h5>{t('office')}</h5>
         <p className="text-xl leading-[31px]">
           <strong>T:</strong>0 532 362 89 35
         </p>

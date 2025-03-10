@@ -1,6 +1,123 @@
 {
   "HomePage": {
-    "title": "Merhaba Dünya!",
-    "about": "Hakkında sayfasına git"
+    "title": "PROJELER",
+    "about": "2018 Yılında kurulan HAMA, Endüstriyel Mutfak, Çamaşırhane, Açık Büfe ve Servis Ekipmanları konusunda, Hotel, Restaurant, Cafeteria, Fast Food Zincileri, Okullar, Hastaneler, Alışveriş Merkezleri, Bankalar, Ofis Binaları gibi işletmeler için uzman ve dinamik proje yöneticileri ve teknik kadrosu ile Projelendirme, Satış, Montaj ve Satış Sonrası Servis konularında hizmet vermektedir."
+  },
+  "About": {
+    "p1": "HAMA Endüstriyel Mutfak San. Ve Tic. Ltd. Şti.(HAMA), Endüstriyel Mutfak, Çamaşırhane, Açık Büfe, Servis Ekipmanları ve Medikal Ekipmanlar konusunda, Hotel, Restaurant, Cafeteria, Fast Food Zincirleri, Eğitim Kurumları, Hastaneler, Alışveriş Merkezleri, Bankalar, Ofis Binaları gibi işletmeler için uzman ve dinamik proje yöneticileri ve teknik kadrosu ile Projelendirme, Satış, Montaj ve Satış Sonrası Servis konularında hizmet vermek amacı ile 2018 yılında kurulmuştur.",
+    "p2": "Şirket kurucularının sektördeki 22 yıllık proje tasarım ve satış deneyiminden yola çıkılarak kurulan HAMA için ana prensip, Mutfak, Çamaşırhane ve Açık büfelerde işletim şeması doğru sağlık kurallarına uygun, (HACCP Regulations), yatırımcı ve işletmecilerin yüksek teknoloji ve kaliteli çözüm beklentisine cevap verecek planlamayı sağlamaktır.",
+    "p3": "Proje grubu tarafından bu ana prensip doğrultusunda her türlü ortama uygun, verimlilik arttırıcı çok yönlü tasarımlar hazırlanmakta ve projelerin anahtar teslimi kurulumu gerçekleştirilmektedir.",
+    "p4": "HAMA, Proje tasarım ve kurulum aşamasında, yapıların işletim aşamasını da göz önüne alarak proje risklerini yönetir ve bu sayede projenin değerini ve performansını arttırarak işverenin başarılı olmasında ona destek olur.",
+    "p5": "HAMA, yerli ve ithal birçok ekipmanın tedarikini Türkiye de sektörün öncüsü olan markalardan sağlamaktadır. Ayrıca iş birlikteliği yaptığı firmalar ile beraber paslanmaz çelik mutfak teçhizatı üretimini gerçekleştirmektedir.",
+    "listItems": {
+      "listItem1": "Müşteri Odaklı Hizmet",
+      "listItem2": "İş Ahlakı ve Dürüstlük",
+      "listItem3": "Çalışanların Mutluluğu",
+      "listItem4": "İş Ortaklarımıza Saygı",
+      "listItem5": "Kaliteli Ürün Kaliteli Hizmet",
+      "listItem6": "Müşteri Memnuniyeti"
+    },
+    "sections": {
+      "heading": "VİZYONUMUZ / OUR MİSYONUMUZ",
+      "heading2": "DEĞERLERİMİZ",
+      "heading3": "BULUNDUĞUMUZ PROJELER",
+      "vision": {
+        "heading": "Vizyonumuz",
+        "text": "Bölgesel pazarda ve yakın coğrafyada (Orta doğu, Türki Cumhuriyetler, Afrika) ilk 5 markadan biri olmak."
+      },
+      "mission": {
+        "heading": "Misyonumuz",
+        "text": "Endüstriyel Mutfak sektöründe, çalışanları ile birlikte sürekli gelişerek, evrensel kalite ve standartlarda proje, ürün ve hizmetler sunarak müşterilerin memnuniyetini sağlamak."
+      },
+      "values": {
+        "heading": "Müşteri Odaklı Olmak",
+        "text": "Müşterilerimiz için değer yaratmak, beklentilerine kalite ve hizmette süreklilik sağlayarak karşılık vermek önceliğimizdir. Projelerimiz ve ürünlerimize sahip çıkarak satış sonrasında da müşterilerimizin yanında olmak görevimizdir."
+      },
+      "ethics": {
+        "heading": "İş Ahlakı ve Dürüstlük İlkelerine Bağlı Kalmak",
+        "text": "Tüm ilişkilerimizde dürüst, adilane, iyi niyet ve anlayış ile davranarak yasalara ve ahlak kurallarına daima uymak ilkemizdir. Topluma ve çevreye sürekli bir katma değer sağlamak görevimizdir."
+      },
+      "employees": {
+        "heading": "Çalışanların Mutluluğunu Sağlamak",
+        "text": "Hizmetlerimizin kalitesi çalışanlarımızın kalitesi ile başlar. Çalışanların özlük haklarının tam ve doğru biçimde kullanılmasını sağlamak, dürüst, adil, ayrımcı olmayan, güvenli ve sağlıklı bir yaklaşımda bulunmak, bireysel gelişimleri için gerekli çabayı göstermek kurumumuzun devamlılığını sağlamak için seçtiğimiz yoldur."
+      },
+      "partners": {
+        "heading": "Tedarikçi / İş Ortaklarımıza Saygı Duymak",
+        "text": "İyi bir müşteriden beklendiği şekilde adil ve saygılı davranmak, yükümlülüklerimizi zamanında yerine getirmek için gerekli özeni göstermek, İş yaptığımız kişi ve kuruluşlar ile iş ortaklarımızın gizli bilgilerini özenle korumak en temel ilkelerimizdendir."
+      }
+    },
+    "projects": {
+      "ul1": [
+        "Fenerbahçe Topuk Yaylası Resort & Sport - Bolu",
+        "Wyndham Grand İstanbul Europe - İstanbul",
+        "Le Mirage Hotel - Katar Doha",
+        "Bagram Hava Üssü - Afganistan"
+      ],
+      "ul2": [
+        "Türmenbaşı Uluslararası Havaalanı - Türkmenistan",
+        "The Grand Tarabya - İstanbul",
+        "Park Hyatt İstanbul Maçka Palas - İstanbul",
+        "D Hotel Maris - Marmaris"
+      ],
+      "ul3": [
+        "Radisson Blu Iveria Hotel - Gürcistan",
+        "Radisson Blu Hotel & Spa - İstanbul",
+        "Hilton İstanbul Bomonti Hotel & Conference Center - İstanbul",
+        "Hilton İstanbul Kozyatağı - İstanbul"
+      ],
+      "ul4": [
+        "Payne Amerikan Askeri Kampı - Afganistan",
+        "Geranimo Amerikan Askeri Kampı - Afganistan",
+        "Bağdat Amerikan Askeri Kampı - Irak",
+        "Reina, Suada Club İstanbul - Ortaköy"
+      ]
+    }
+  },
+  "Services": {
+    "headings": {
+      "h4": "NELER YAPIYORUZ ?",
+      "h1": "HİZMETLERİMİZ"
+    },
+    "tabs": {
+      "tab1": {
+        "title": "DANIŞMANLIK",
+        "content": "Hama olarak, otel, restaurant, hastane, üniversiteler, iş merkezleri vb. yatırımlarınızın mutfak,çamaşırhane,açık büfe ve servis ekipmanları konusunda yerleşim planlaması, tesisat alt yapı planlaması ve bütçelendirmesine yönelik danışmanlık hizmeti vermekteyiz."
+      },
+      "tab2": {
+        "title": "PROJE",
+        "content": "Proje grubumuz tarafından Mutfak, Çamaşırhane ve Açık Büfelerde işletim şeması doğru , sağlık kurallarına uygun, yatırımcı ve işletmecilerin yüksek teknoloji ve kaliteli çözüm beklentisine cevap verebilecek her türlü ortama uygun verimlilik arttırıcı ve çok yönlü tasarımlar hazırlanmaktadır."
+      },
+      "tab3": {
+        "title": "SATIŞ",
+        "content": "Hama, Türkiye ve Dünyada konusunda lider, Mutfak, Çamaşırhane, Açık Büfe ve Servis Ekipmanlarına ait cihazları üreten firmalar ile çalışmaktadır. Biz biliyoruz ki İyi bir işletme doğru planlama ve doğru ürünlerin kullanılması sonucunda ortya çıkar ve uzun yıllar kalitesinden ödün vermeden varlığını sürdürebilir ve inanıyoruz ki , satışını yaptığımız ürünler uzun yıllar kullanıcıya hizmet etmelidir."
+      },
+      "tab4": {
+        "title": "SATIŞ DESTEK",
+        "content": "Hama, temin ettiği ithal ve yerli ekipmanlar için satış sonrası teknik servis hizmetlerini, kendi bünyesindeki teknik servis elemanları veya yetkili servis şirketleri vasıtası ile vermektedir."
+      }
+    }
+  },
+  "contact-us": {
+    "PageHeader": "Projeniz mi var? Bize ulaşın",
+    "office": "Ofis",
+    "inquiries": "Talepleriniz",
+    "name": "Adınız Soyadınız",
+    "email": "E-Posta Adresiniz",
+    "message": "Mesajınız",
+    "send": "Gönder",
+    "sending": "Gönderiliyor..."
+  },
+  "PageHeader": {
+    "heading": "HAMA",
+    "p": "ENDÜSTRİYEL MUTFAK HİZMETLERİ"
+  },
+  "Footer": {
+    "project": "PROJENİZİ KONUŞUN",
+    "contactUs": "BİZE ULAŞIN",
+    "followUs": "BİZİ TAKİP EDİN",
+    "copyright": "Copyright © 2019 Hama Endüstriyel Mutfak Sanayi Ve Ticaret Limited Şirketi. Tüm hakları saklıdır."
+  },
+  "toTop": {
+    "text": "Yukarı Çık"
   }
 }

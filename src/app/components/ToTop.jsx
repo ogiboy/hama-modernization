@@ -6,10 +6,13 @@ import {
   useMotionValue,
   useMotionValueEvent,
 } from 'motion/react'
+import { useTranslations } from 'next-intl'
 
 const ToTop = () => {
   const { scrollYProgress } = useScroll()
   const isVisible = useMotionValue(0)
+
+  const t = useTranslations('toTop')
 
   useMotionValueEvent(scrollYProgress, 'change', (value) => {
     // console.log('value: ' + value * 100)
@@ -35,7 +38,7 @@ const ToTop = () => {
       >
         <p className="py-[5px] pr-[10px] pl-[30px] text-center relative font-robotoSlab text-xl">
           <span className="animate-bounce absolute left-3">▲</span>
-          Yukarı Çık
+          {t('text')}
         </p>
       </nav>
     </motion.div>

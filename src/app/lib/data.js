@@ -2,7 +2,7 @@
 
 const aboutDetails = [
   {
-    id: 0,
+    id: 1,
     text: `HAMA Endüstriyel Mutfak San. Ve Tic. Ltd. Şti.(HAMA), Endüstriyel
             Mutfak, Çamaşırhane, Açık Büfe, Servis Ekipmanları ve Medikal
             Ekipmanlar konusunda, Hotel, Restaurant, Cafeteria, Fast Food

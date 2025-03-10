@@ -2,7 +2,7 @@
 
 import { useFormStatus } from 'react-dom'
 
-const SubmitBtn = () => {
+const SubmitBtn = ({ t }) => {
   const { pending } = useFormStatus()
 
   return (
@@ -11,7 +11,7 @@ const SubmitBtn = () => {
       type="submit"
       disabled={pending}
     >
-      {pending ? 'GÖNDERİLİYOR...' : 'GÖNDER'}
+      {pending ? t('sending') : t('send')}
     </button>
   )
 }

@@ -11,8 +11,11 @@ import cafebar from '../../../public/home-images/cafebar.jpg'
 import hotelmutfak from '../../../public/home-images/hotelmutfak1.jpg'
 import showmuftak from '../../../public/home-images/showmutfagi-min.jpg'
 import camasirhane from '../../../public/home-images/camasirhane.jpg'
+import { useTranslations } from 'next-intl'
 
 const Homepage = () => {
+  const t = useTranslations('HomePage')
+
   const projects = [
     {
       id: 1,
@@ -49,12 +52,7 @@ const Homepage = () => {
         </div>
 
         <p className="w-4/5 mx-auto text-center leading-10 text-[28px]">
-          2018 Yılında kurulan HAMA, Endüstriyel Mutfak, Çamaşırhane, Açık Büfe
-          ve Servis Ekipmanları konusunda, Hotel, Restaurant, Cafeteria, Fast
-          Food Zincileri, Okullar, Hastaneler, Alışveriş Merkezleri, Bankalar,
-          Ofis Binaları gibi işletmeler için uzman ve dinamik proje yöneticileri
-          ve teknik kadrosu ile Projelendirme, Satış, Montaj ve Satış Sonrası
-          Servis konularında hizmet vermektedir.
+          {t('about')}
         </p>
       </article>
 
@@ -63,7 +61,7 @@ const Homepage = () => {
           HAMA
         </h4>
         <h1 className="bg-blackWave bg-no-repeat bg-bottom -mt-[14px] text-[85px] font-montserrat font-bold">
-          PROJELER
+          {t('title')}
         </h1>
 
         <div className="mt-12 -mx-[15px] h-fit flex flex-wrap justify-between items-center">

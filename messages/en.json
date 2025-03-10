@@ -1,6 +1,124 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "title": "PROJECTS",
+    "about": "Founded in 2018, HAMA provides services in Project Planning, Sales, Installation, and After-Sales Support for Industrial Kitchen, Laundry, Buffet, and Service Equipment. With its expert and dynamic project managers and technical team, HAMA serves businesses such as Hotels, Restaurants, Cafeterias, Fast Food Chains, Schools, Hospitals, Shopping Centers, Banks, and Office Buildings."
+  },
+  "About": {
+    "p1": "HAMA Industrial Kitchen Industry and Trade Ltd. (HAMA) was established in 2018 to provide services in the fields of Industrial Kitchen, Laundry, Buffet, Service Equipment, and Medical Equipment. With its expert and dynamic project managers and technical staff, HAMA offers services in Project Design, Sales, Installation, and After-Sales Service for businesses such as Hotels, Restaurants, Cafeterias, Fast Food Chains, Educational Institutions, Hospitals, Shopping Centers, Banks, and Office Buildings.",
+    "p2": "HAMA, founded based on the 22 years of project design and sales experience of its founders in the industry, has the main principle of ensuring proper operational diagrams in Kitchens, Laundries, and Buffets, in compliance with health regulations (HACCP Regulations), and providing planning that meets the high technology and quality solution expectations of investors and operators.",
+    "p3": "Aligned with this core principle, the project team prepares versatile designs that enhance efficiency and are suitable for any environment, and the turnkey installation of the projects is carried out.",
+    "p4": "HAMA, during the project design and installation phase, manages project risks by considering the operational phase of the structures, thus enhancing the value and performance of the project and supporting the employer’s success.",
+    "p5": "HAMA procures both domestic and imported equipment from industry-leading brands in Turkey. Additionally, in collaboration with partner companies, HAMA manufactures stainless steel kitchen equipment.",
+    "listItems": {
+      "listItem1": "Customer-Oriented Service",
+      "listItem2": "Work Ethic and Integrity",
+      "listItem3": "Employee Happiness",
+      "listItem4": "Respect for Business Partners",
+      "listItem5": "Quality Product Quality Service",
+      "listItem6": "Customer Satisfaction"
+    },
+    "sections": {
+      "heading": "OUR VISION / OUR MISSION",
+      "heading2": "OUR VALUES",
+      "heading3": "PROJECTS WE ARE INVOLVED IN",
+      "vision": {
+        "heading": "Our Vision",
+        "text": "To become one of the top 5 brands in the regional market and nearby geography (Middle East, Turkic Republics, Africa)."
+      },
+      "mission": {
+        "heading": "Our Mission",
+        "text": "To continuously develop together with our employees in the industrial kitchen sector, providing projects, products, and services of universal quality and standards to ensure customer satisfaction."
+      },
+      "values": {
+        "heading": "Being Customer-Oriented",
+        "text": "Our priority is to create value for our customers and meet their expectations with consistent quality and service. We take ownership of our projects and products, ensuring our support continues even after sales."
+      },
+      "ethics": {
+        "heading": "Adhering to Business Ethics and Integrity Principles",
+        "text": "Our principle is to act honestly, fairly, with goodwill and understanding in all our relationships while always complying with laws and ethical rules. It is our duty to provide continuous added value to society and the environment."
+      },
+      "employees": {
+        "heading": "Ensuring Employee Happiness",
+        "text": "The quality of our services begins with the quality of our employees. We are committed to ensuring that employees fully and properly exercise their rights, maintaining a fair, non-discriminatory, safe, and healthy work environment, and supporting their individual development to sustain our institution's continuity."
+      },
+      "partners": {
+        "heading": "Respecting Our Suppliers / Business Partners",
+        "text": "We adhere to fair and respectful conduct as expected from a good customer, ensuring we fulfill our obligations on time with due diligence. Protecting the confidential information of the individuals and organizations we work with is one of our fundamental principles."
+      }
+    },
+    "projects": {
+      "ul1": [
+        "Fenerbahçe Topuk Yaylası Resort & Sport - Bolu",
+        "Wyndham Grand Istanbul Europe - Istanbul",
+        "Le Mirage Hotel - Qatar Doha",
+        "Bagram Airbase - Afghanistan"
+      ],
+
+      "ul2": [
+        "Türmenbaşı International Airport - Turkmenistan",
+        "The Grand Tarabya - Istanbul",
+        "Park Hyatt Istanbul Maçka Palas - Istanbul",
+        "D Hotel Maris - Marmaris"
+      ],
+      "ul3": [
+        "Radisson Blu Iveria Hotel - Georgia",
+        "Radisson Blu Hotel & Spa - Istanbul",
+        "Hilton Istanbul Bomonti Hotel & Conference Center - Istanbul",
+        "Hilton Istanbul Kozyatağı - Istanbul"
+      ],
+      "ul4": [
+        "Payne US Military Base - Afghanistan",
+        "Geronimo US Military Base - Afghanistan",
+        "Baghdad US Military Base - Iraq",
+        "Reina, Suada Club Istanbul - Ortaköy"
+      ]
+    }
+  },
+  "Services": {
+    "headings": {
+      "h4": "WHAT WE DO ?",
+      "h1": "OUR SERVICES"
+    },
+    "tabs": {
+      "tab1": {
+        "title": "CONSULTING",
+        "content": "As Hama, we provide consulting services for the layout planning, infrastructure planning, and budgeting of kitchen, laundry, buffet, and service equipment for investments such as hotels, restaurants, hospitals, universities, office buildings, etc."
+      },
+      "tab2": {
+        "title": "PROJECT",
+        "content": "Our project group prepares efficiency-enhancing and versatile designs suitable for any environment, meeting the operational diagram requirements of kitchens, laundries, and buffets, in compliance with health regulations. These designs are tailored to meet the high technology and quality solution expectations of investors and operators."
+      },
+      "tab3": {
+        "title": "SALES",
+        "content": "Hama works with leading companies in Turkey and worldwide that manufacture equipment for kitchens, laundries, buffets, and service. We know that a good business is the result of proper planning and the use of the right products, and that it can continue its existence for many years without compromising its quality. We believe that the products we sell should serve the user for many years."
+      },
+      "tab4": {
+        "title": "SALES SUPPORT",
+        "content": "Hama provides after-sales technical service for the imported and domestic equipment it supplies through its own technical service personnel or authorized service companies."
+      }
+    }
+  },
+  "PageHeader": {
+    "heading": "HAMA",
+    "p": "INDUSTRIAL KITCHEN SERVICES"
+  },
+  "contact-us": {
+    "PageHeader": "Do you have a project? Contact us.",
+    "office": "Office",
+    "inquiries": "Inquiries",
+    "name": "Your Full Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send",
+    "sending": "Sending..."
+  },
+  "Footer": {
+    "project": "TELL US YOUR PROJECT",
+    "contactUs": "CONTACT US",
+    "followUs": "FOLLOW US",
+    "copyright": "Copyright © 2019 Hama Industrial Kitchen Industry and Trade Limited Company. All rights reserved."
+  },
+  "toTop": {
+    "text": "To Top"
   }
 }

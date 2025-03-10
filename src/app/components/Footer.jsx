@@ -1,12 +1,15 @@
+import { useTranslations } from 'next-intl'
 import { FaGooglePlusG, FaTwitter, FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
+  const t = useTranslations('Footer')
+
   return (
     <footer className="text-white bg-[#0C0C0C] bg-dividerWhite bg-repeat-x font-robotoSlab">
       <address className="custom-container text-center pt-[150px] flex items-baseline justify-between flex-wrap not-italic">
         <article className="w-fit">
           <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom pb-[28px]">
-            Projenizi Konuşun
+            {t('project')}
           </h3>
 
           <p className="mt-10 text-xl leading-7 font-thin">
@@ -18,7 +21,7 @@ const Footer = () => {
 
         <article className="w-fit">
           <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom pb-[28px]">
-            Bize Ulaşın
+            {t('contactUs')}
           </h3>
 
           <p className="mt-10 text-xl leading-7 font-thin">
@@ -28,7 +31,7 @@ const Footer = () => {
 
         <div className="w-fit">
           <h3 className="pr-7 uppercase bg-whiteWave bg-no-repeat bg-bottom pb-[28px]">
-            Bizi Takip Edin
+            {t('followUs')}
           </h3>
 
           <section className="mt-10 w-full h-full flex justify-center items-center">
@@ -48,8 +51,7 @@ const Footer = () => {
       <section className="w-full h-[302px] mt-[45px] bg-buildingDark bg-no-repeat">
         <div className="custom-container w-full h-full text-[#222] flex justify-around items-end">
           <p className="text-[16px] text-[#8d8d8d] leading-[36px] font-light">
-            Copyright © 2019 Hama Endüstriyel Mutfak Sanayi Ve Ticaret Limited
-            Şirketi. Tüm hakları saklıdır.
+            {t('copyright')}
           </p>
 
           <p className="text-[16px] text-[#8d8d8d] leading-[36px]">

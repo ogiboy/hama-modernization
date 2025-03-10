@@ -8,27 +8,30 @@ import satis from '../../../public/services-images/satis.png'
 import satisDestek from '../../../public/services-images/destek.png'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(0)
+
+  const t = useTranslations('Services')
 
   const handleButtons = (value) => {
     console.log(value)
 
     switch (value) {
-      case 'DANIŞMANLIK':
+      case 1:
         setSelectedService(0)
         break
 
-      case 'PROJE':
+      case 2:
         setSelectedService(1)
         break
 
-      case 'SATIŞ':
+      case 3:
         setSelectedService(2)
         break
 
-      case 'SATIŞ DESTEK':
+      case 4:
         setSelectedService(3)
         break
 
@@ -41,41 +44,41 @@ const Services = () => {
   const serviceItems = [
     {
       id: 1,
-      btnText: 'DANIŞMANLIK',
+      btnText: t('tabs.tab1.title'),
       image: danismanlik,
-      imageAlt: 'Danışmanlık',
-      text: 'Hama olarak, otel, restaurant, hastane, üniversiteler, iş merkezleri vb. yatırımlarınızın mutfak,çamaşırhane,açık büfe ve servis ekipmanları konusunda yerleşim planlaması, tesisat alt yapı planlaması ve bütçelendirmesine yönelik danışmanlık hizmeti vermekteyiz.',
+      imageAlt: t('tabs.tab1.title'),
+      text: t('tabs.tab1.content'),
     },
     {
       id: 2,
-      btnText: 'PROJE',
+      btnText: t('tabs.tab2.title'),
       image: proje,
-      imageAlt: 'Proje',
-      text: 'Proje grubumuz tarafından Mutfak, Çamaşırhane ve Açık Büfelerde işletim şeması doğru , sağlık kurallarına uygun, yatırımcı ve işletmecilerin yüksek teknoloji ve kaliteli çözüm beklentisine cevap verebilecek her türlü ortama uygun verimlilik arttırıcı ve çok yönlü tasarımlar hazırlanmaktadır.',
+      imageAlt: t('tabs.tab2.title'),
+      text: t('tabs.tab2.content'),
     },
     {
       id: 3,
-      btnText: 'SATIŞ',
+      btnText: t('tabs.tab3.title'),
       image: satis,
-      imageAlt: 'Satış',
-      text: 'Hama, Türkiye ve Dünyada konusunda lider, Mutfak, Çamaşırhane, Açık Büfe ve Servis Ekipmanlarına ait cihazları üreten firmalar ile çalışmaktadır. Biz biliyoruz ki İyi bir işletme doğru planlama ve doğru ürünlerin kullanılması sonucunda ortya çıkar ve uzun yıllar kalitesinden ödün vermeden varlığını sürdürebilir ve inanıyoruz ki , satışını yaptığımız ürünler uzun yıllar kullanıcıya hizmet etmelidir.',
+      imageAlt: t('tabs.tab3.title'),
+      text: t('tabs.tab3.content'),
     },
     {
       id: 4,
-      btnText: 'SATIŞ DESTEK',
+      btnText: t('tabs.tab4.title'),
       image: satisDestek,
-      imageAlt: 'Satış Destek',
-      text: 'Hama, temin ettiği ithal ve yerli ekipmanlar için satış sonrası teknik servis hizmetlerini, kendi bünyesindeki teknik servis elemanları veya yetkili servis şirketleri vasıtası ile vermektedir.',
+      imageAlt: t('tabs.tab4.title'),
+      text: t('tabs.tab4.content'),
     },
   ]
 
   return (
     <section className="py-[110px]">
       <h4 className="text-center font-montserrat text-mainColor text-2xl tracking-[11px]">
-        NELER YAPIYORUZ ?
+        {t('headings.h4')}
       </h4>
       <h1 className="bg-blackWave bg-no-repeat bg-bottom text-center font-montserrat">
-        HİZMETLERİMİZ
+        {t('headings.h1')}
       </h1>
       <article className="custom-container mt-[65px] min-h-[550px] text-[#333] transition-all ease-in-out duration-1000">
         <div className="border-[1px] border-[#dbdbdb] border-collapse flex justify-between items-center flex-nowrap mb-[70px]">
@@ -84,7 +87,7 @@ const Services = () => {
               <button
                 key={item.id}
                 type="button"
-                onClick={(e) => handleButtons(e.target.innerHTML)}
+                onClick={(e) => handleButtons(item.id)}
                 className={`border-[1px] border-[#dbdbdb] border-collapse py-[21px] pl-[20px] font-semibold text-lg grow hover:bg-mainColor hover:text-white transition-colors duration-500 ease-in-out ${
                   selectedService === index
                     ? 'bg-black text-white cursor-default'

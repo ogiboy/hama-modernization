@@ -9,7 +9,7 @@ const StickyNavbar = ({ scrollYProgress, navLinks, pathname, isNavSticky }) => {
       initial={{ y: 0 }}
       animate={{ y: isNavSticky ? 0 : '-100%', opacity: isNavSticky ? 1 : 0 }}
       transition={{ duration: 0.5, ease: 'easeInOut' }}
-      className="fixed top-0 left-0 right-0 z-50 h-[106px] bg-mainColor"
+      className="fixed top-0 left-0 right-0 z-[999] h-[106px] bg-mainColor"
     >
       <motion.div
         style={{
@@ -23,7 +23,7 @@ const StickyNavbar = ({ scrollYProgress, navLinks, pathname, isNavSticky }) => {
           borderRadius: '1px',
         }}
       />
-      <nav className="custom-container py-[25px] px-[15px] w-full h-full flex justify-around items-center  font-montserrat text-white uppercase absolute z-50">
+      <nav className="custom-container py-[25px] px-[15px] w-full h-full flex justify-around items-center  font-montserrat text-white uppercase absolute">
         <Link className="flex justify-center" href="/">
           <Image src="/logo.png" width={236} height={66} alt="brand logo" />
         </Link>
