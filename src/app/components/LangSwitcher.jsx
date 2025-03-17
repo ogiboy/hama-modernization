@@ -5,7 +5,7 @@ const LangSwitcher = () => {
   const pathname = usePathname()
   const locale = useLocale()
 
-  console.log(pathname, locale)
+  // console.log(pathname, locale)
 
   const changedLocale = locale === 'en' ? 'tr' : 'en'
   const newPathname = pathname === '/' ? '' : pathname

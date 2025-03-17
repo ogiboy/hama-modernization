@@ -3,7 +3,7 @@
     {
       "id": "d-1",
       "title": "ASN 100-Servis Arabası",
-      "image": "/products/cars/ASN-100.png",
+      "image": "/product/cars/ASN-100.png",
       "description": [
         "Tamamı AISI304 kalite 18/8 Cr-Nİ paslanmaz çelik saçtan üretilmiştir.",
         "Sac kısmı 1,20 mm kalınlığındadır.",
@@ -15,7 +15,7 @@
     {
       "id": "d-2",
       "title": "ASN-100 SERVİS ARABASI",
-      "image": "/products/cars/ASN-100.png",
+      "image": "/product/cars/ASN-100.png",
       "description": [
         "Açıklamalardaki Satırlar Ayrı Ayrı",
         "Satır Satır Girilmelidir",
@@ -653,7 +653,6 @@
         "100 mm yağ kanalı ve yağ kanalında biriken yağların tahliyesi için küresel vana bulunmaktadır.",
         "İsteğe göre etanj tip armatürlerle aydınlatma imkanı bulunmaktadır.",
         "<strong>TEKNİK BİLGİLER</strong>",
-        "TEKNİK BİLGİLER",
         "<thead>\n                                    <tr>\n                                        <th>KOD</th>\n                                        <th>ÖLÇÜLER</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>HM-DOF 154</td>\n                                        <td>1500x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 204</td>\n                                        <td>2000x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 254</td>\n                                        <td>2500x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 304</td>\n                                        <td>3000x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 354</td>\n                                        <td>3500x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 404</td>\n                                        <td>4000x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 454</td>\n                                        <td>4500x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 504</td>\n                                        <td>5000x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 554</td>\n                                        <td>5500x1470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 604</td>\n                                        <td>6000x1470x500</td>\n                                    </tr>\n                                </tbody>",
         "<thead>\n                                    <tr>\n                                        <th>KOD</th>\n                                        <th>ÖLÇÜLER</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n\n                                    <tr>\n                                        <td>HM-DOF 256</td>\n                                        <td>2500x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 306</td>\n                                        <td>3000x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 356</td>\n                                        <td>3500x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 406</td>\n                                        <td>4000x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 456</td>\n                                        <td>4500x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 506</td>\n                                        <td>5000x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 556</td>\n                                        <td>5500x1970x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 606</td>\n                                        <td>6000x1970x500</td>\n                                    </tr>\n                                </tbody>",
         "<thead>\n                                    <tr>\n                                        <th>KOD</th>\n                                        <th>ÖLÇÜLER</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n\n                                    <tr>\n                                        <td>HM-DOF 258</td>\n                                        <td>2500x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 308</td>\n                                        <td>3000x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 358</td>\n                                        <td>3500x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 408</td>\n                                        <td>4000x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 458</td>\n                                        <td>4500x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 508</td>\n                                        <td>5000x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 558</td>\n                                        <td>5500x2470x500</td>\n                                    </tr>\n                                    <tr>\n                                        <td>HM-DOF 608</td>\n                                        <td>6000x2470x500</td>\n                                    </tr>\n                                </tbody>",
@@ -3112,6 +3111,48 @@
     }
   ],
   "hazirlik": [
+    {
+      "id": "1ekmekservis",
+      "title": "EKMEK SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/1ekmekservis.png",
+      "description": []
+    },
+    {
+      "id": "2sogukservis",
+      "title": "SOĞUK SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/2sogukservis.png",
+      "description": []
+    },
+    {
+      "id": "3sicakservis",
+      "title": "SICAK SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/3sicakservis.png",
+      "description": []
+    },
+    {
+      "id": "4corbaservis",
+      "title": "ÇORBA SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/4corbaservis.png",
+      "description": []
+    },
+    {
+      "id": "5notrservis",
+      "title": "NÖTR SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/5notrservis.png",
+      "description": []
+    },
+    {
+      "id": "6isitmaliservis",
+      "title": "ISITMALI SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/6isitmaliservis.png",
+      "description": []
+    },
+    {
+      "id": "7notrservis",
+      "title": "NÖTR SERVİS ÜNİTESİ",
+      "image": "/product/hazirlik/acikbufe/7notrservis.png",
+      "description": []
+    },
     {
       "id": "d-131",
       "title": "36-304 – Tel İstif Rafı / 304",

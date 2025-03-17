@@ -3,7 +3,7 @@
     {
       "id": "d-1",
       "title": "ASN 100-Servis Arabası",
-      "image": "images/products/cars/ASN-100.png",
+      "image": "images/product/cars/ASN-100.png",
       "description": [
         "Tamamı AISI304 kalite 18/8 Cr-Nİ paslanmaz çelik saçtan üretilmiştir.",
         "Sac kısmı 1,20 mm kalınlığındadır.",
@@ -15,7 +15,7 @@
     {
       "id": "d-2",
       "title": "ASN-100 SERVİS ARABASI",
-      "image": "images/products/cars/ASN-100.png",
+      "image": "images/product/cars/ASN-100.png",
       "description": [
         "Açıklamalardaki Satırlar Ayrı Ayrı",
         "Satır Satır Girilmelidir",
@@ -1058,25 +1058,19 @@
       "id": "d-57",
       "title": "WAT 100B – Temiz Çamaşır Arabası",
       "image": "images/product/camasirhane/camasirarabalari/2-WAT-100B.png",
-      "description": [
-        "Ebatlar: 100*50*185 mm"
-      ]
+      "description": ["Ebatlar: 100*50*185 mm"]
     },
     {
       "id": "d-58",
       "title": "WAT 100 -Temiz Çamaşır İstif Arabası",
       "image": "images/product/camasirhane/camasirarabalari/3-WAT-100.png",
-      "description": [
-        "Ebatlar: 100*50*185 mm"
-      ]
+      "description": ["Ebatlar: 100*50*185 mm"]
     },
     {
       "id": "d-59",
       "title": "WAY 100/Kirli Çamaşır Arabası",
       "image": "images/product/camasirhane/camasirarabalari/4-WAY-100.png",
-      "description": [
-        "Ebatlar: 90*81*76 mm"
-      ]
+      "description": ["Ebatlar: 90*81*76 mm"]
     },
     {
       "id": "d-60",
@@ -1090,28 +1084,19 @@
       "id": "d-61",
       "title": "WCA 555 – Islak Çamaşır Arabası",
       "image": "images/product/camasirhane/camasirarabalari/6-WCA-555.png",
-      "description": [
-        "3500 lt kapasitelidir.",
-        "Ebatlar: 82*59*82 mm"
-      ]
+      "description": ["3500 lt kapasitelidir.", "Ebatlar: 82*59*82 mm"]
     },
     {
       "id": "d-62",
       "title": "WKC 552 – Çift Torbalı Kirli çamaşır arabası",
       "image": "images/product/camasirhane/camasirarabalari/7-WKC-552.png",
-      "description": [
-        "Elektrostatik boyalıdır.",
-        "Ebatlar: 105*62*93 mm"
-      ]
+      "description": ["Elektrostatik boyalıdır.", "Ebatlar: 105*62*93 mm"]
     },
     {
       "id": "d-63",
       "title": "WCA 560 – Temiz-Kirli Çamaşır arabası",
       "image": "images/product/camasirhane/camasirarabalari/8-WCA-560.png",
-      "description": [
-        "Elektrostatik boyalıdır.",
-        "Ebatlar: 70*70*180 mm"
-      ]
+      "description": ["Elektrostatik boyalıdır.", "Ebatlar: 70*70*180 mm"]
     },
     {
       "id": "d-64",
@@ -3127,6 +3112,48 @@
     }
   ],
   "hazirlik": [
+    {
+      "id": "1ekmekservis",
+      "title": "EKMEK SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/1ekmekservis.png",
+      "description": []
+    },
+    {
+      "id": "2sogukservis",
+      "title": "SOĞUK SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/2sogukservis.png",
+      "description": []
+    },
+    {
+      "id": "3sicakservis",
+      "title": "SICAK SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/3sicakservis.png",
+      "description": []
+    },
+    {
+      "id": "4corbaservis",
+      "title": "ÇORBA SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/4corbaservis.png",
+      "description": []
+    },
+    {
+      "id": "5notrservis",
+      "title": "NÖTR SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/5notrservis.png",
+      "description": []
+    },
+    {
+      "id": "6isitmaliservis",
+      "title": "ISITMALI SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/6isitmaliservis.png",
+      "description": []
+    },
+    {
+      "id": "7notrservis",
+      "title": "NÖTR SERVİS ÜNİTESİ",
+      "image": "images/product/hazirlik/acikbufe/7notrservis.png",
+      "description": []
+    },
     {
       "id": "d-131",
       "title": "36-304 – Tel İstif Rafı / 304",

@@ -110,6 +110,13 @@
   .custom-container {
     @apply px-[15px] lg:w-[1200px] md:w-[992px] sm:w-[750px] mx-auto;
   }
+  .custom-table {
+    @apply border border-black border-collapse text-sm mr-[10px] mb-[10px];
+  }
+  .custom-table thead tr th,
+  .custom-table tbody tr td {
+    @apply border border-black p-[5px];
+  }
 }
 
 .counter-list {

@@ -88,7 +88,7 @@ const Services = () => {
                 key={item.id}
                 type="button"
                 onClick={(e) => handleButtons(item.id)}
-                className={`border-[1px] border-[#dbdbdb] border-collapse py-[21px] pl-[20px] font-semibold text-lg grow hover:bg-mainColor hover:text-white transition-colors duration-500 ease-in-out ${
+                className={`border-[1px] border-[#dbdbdb] border-collapse py-[21px] pl-[20px] font-montserrat font-semibold text-lg grow hover:bg-mainColor hover:text-white transition-colors duration-500 ease-in-out ${
                   selectedService === index
                     ? 'bg-black text-white cursor-default'
                     : ''
