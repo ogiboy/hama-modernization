@@ -97,6 +97,26 @@
       }
     }
   },
+  "work": {
+    "categories": {
+      "pisiriciler": "Pişiriciler",
+      "firin": "Fırın",
+      "set": "Set",
+      "bulasik": "Bulaşık",
+      "sogutucu": "Soğutucu",
+      "hazirlik": "Hazırlık",
+      "davlumbaz": "Davlumbaz",
+      "tezgah": "Tezgah",
+      "araba": "Araba",
+      "depolama_istifleme": "Depolama İstifleme",
+      "servis": "Servis",
+      "acik_bufe": "Açık Büfe",
+      "ithal": "İthal",
+      "gemi": "Gemi",
+      "camasir": "Çamaşır",
+      "medikal": "Medikal Ürünler"
+    }
+  },
   "contact-us": {
     "PageHeader": "Projeniz mi var? Bize ulaşın",
     "office": "Ofis",

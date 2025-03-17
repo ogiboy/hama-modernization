@@ -9,7 +9,7 @@ import WorkButtons from '@/app/components/WorkButtons'
 import { useState, useEffect } from 'react'
 
 const Work = () => {
-  const [selectedCategory, setCategory] = useState('Pişiriciler')
+  const [selectedCategory, setCategory] = useState('pisiriciler')
   const [products, setProducts] = useState({})
   const [isModalOpen, setIsModalOpen] = useState({
     isOpen: false,
@@ -38,40 +38,13 @@ const Work = () => {
     setCategory(category)
     const data = await loadProducts()
     setProducts(data)
-    // console.log(products)
   }
-
-  const normalizeString = (str) => {
-    const turkishMap = {
-      ı: 'i',
-      İ: 'i',
-      ç: 'c',
-      Ç: 'c',
-      ğ: 'g',
-      Ğ: 'g',
-      ş: 's',
-      Ş: 's',
-      ö: 'o',
-      Ö: 'o',
-      ü: 'u',
-      Ü: 'u',
-    }
-
-    return str
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[ıİçÇğĞşŞöÖüÜ]/g, (char) => turkishMap[char])
-  }
-
-  const dbFriendly = normalizeString(selectedCategory)
 
   useEffect(() => {
-    setIsModalOpen(false)
+    setIsModalOpen((p) => ({ ...p, isOpen: false }))
     const fetchInitialData = async () => {
       const data = await loadProducts()
       setProducts(data)
-      // console.log(data)
     }
     fetchInitialData()
   }, [])
@@ -89,13 +62,13 @@ const Work = () => {
 
           <Products
             products={products}
-            dbFriendly={dbFriendly}
+            selectedCategory={selectedCategory}
             setIsModalOpen={setIsModalOpen}
           />
         </main>
       </div>
       {isModalOpen.isOpen && (
-        <article className="bg-[#5a5757]/80 absolute top-0 left-0 w-full h-full overflow-visible z-[999]">
+        <article className="bg-[#5a5757]/80 fixed top-0 left-0 w-full h-full overflow-visible z-[999]">
           <ProductDetails
             item={isModalOpen.item}
             setIsModalOpen={setIsModalOpen}

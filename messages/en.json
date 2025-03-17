@@ -98,6 +98,26 @@
       }
     }
   },
+  "work": {
+    "categories": {
+      "pisiriciler": "Cookers",
+      "firin": "Oven",
+      "set": "Set",
+      "bulasik": "Dishwasher",
+      "sogutucu": "Refrigerator",
+      "hazirlik": "Preparation",
+      "davlumbaz": "Extractor Hood",
+      "tezgah": "Countertop",
+      "araba": "Cart",
+      "depolama_istifleme": "Storage Stacking",
+      "servis": "Service",
+      "acik_bufe": "Buffet",
+      "ithal": "Imported",
+      "gemi": "Ship",
+      "camasir": "Laundry",
+      "medikal": "Medical Products"
+    }
+  },
   "PageHeader": {
     "heading": "HAMA",
     "p": "INDUSTRIAL KITCHEN SERVICES"

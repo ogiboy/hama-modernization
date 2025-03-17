@@ -1,21 +1,25 @@
+import { useTranslations } from 'next-intl'
+
 const WorkButtons = ({ handleBtnClick, selectedCategory }) => {
+  const t = useTranslations('work.categories')
+
   const categories = [
-    'Pişiriciler',
-    'Fırın',
-    'Set',
-    'Bulaşık',
-    'Soğutucu',
-    'Hazırlık',
-    'Davlumbaz',
-    'Tezgah',
-    'Araba',
-    'Depolama İstifleme',
-    'Servis',
-    'Açık Büfe',
-    'İthal',
-    'Gemi',
-    'Çamaşır',
-    'Medikal Ürünler',
+    { key: 'pisiriciler', label: 'Pişiriciler' },
+    { key: 'firin', label: 'Fırın' },
+    { key: 'set', label: 'Set' },
+    { key: 'bulasik', label: 'Bulaşık' },
+    { key: 'sogutucu', label: 'Soğutucu' },
+    { key: 'hazirlik', label: 'Hazırlık' },
+    { key: 'davlumbaz', label: 'Davlumbaz' },
+    { key: 'tezgah', label: 'Tezgah' },
+    { key: 'araba', label: 'Araba' },
+    { key: 'depolama_istifleme', label: 'Depolama İstifleme' },
+    { key: 'servis', label: 'Servis' },
+    { key: 'acik_bufe', label: 'Açık Büfe' },
+    { key: 'ithal', label: 'İthal' },
+    { key: 'gemi', label: 'Gemi' },
+    { key: 'camasir', label: 'Çamaşır' },
+    { key: 'medikal', label: 'Medikal Ürünler' },
   ]
 
   return (
@@ -24,14 +28,14 @@ const WorkButtons = ({ handleBtnClick, selectedCategory }) => {
         return (
           <button
             className={`border border-[#ccc] font-robotoSlab text-[#0d0d0d] hover:bg-mainColor hover:border-mainColor hover:text-white transition-all ease-in-out duration-300 cursor-pointer text-xl mx-0 mb-0 mt-[10px] py-[10px] px-[24px] ${
-              selectedCategory === item
+              selectedCategory === item.key
                 ? 'bg-mainColor text-white cursor-default'
                 : ''
             }`}
-            onClick={(e) => handleBtnClick(e.target.innerHTML)}
-            key={index}
+            onClick={() => handleBtnClick(item.key)}
+            key={item.key}
           >
-            {item}
+            {t(item.key)}
           </button>
         )
       })}

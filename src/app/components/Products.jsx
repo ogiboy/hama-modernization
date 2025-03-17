@@ -1,17 +1,15 @@
 import Image from 'next/image'
 
-const Products = ({ products, dbFriendly, setIsModalOpen }) => {
+const Products = ({ products, selectedCategory, setIsModalOpen }) => {
   const categoryMapping = {
     hazirlik: 'hazirlik/makine',
-    'acik bufe': 'hazirlik/acikbufe',
-    'depolama istifleme': 'hazirlik/depolamaistif',
+    acik_bufe: 'hazirlik/acikbufe',
+    depolama_istifleme: 'hazirlik/depolamaistif',
   }
 
   let dataToShow = []
 
   const handleDetailsModal = (item) => {
-    // console.log('clicked')
-
     if (item.description.length > 0) {
       setIsModalOpen((prevState) => ({ ...prevState, isOpen: true, item }))
     } else {
@@ -19,13 +17,12 @@ const Products = ({ products, dbFriendly, setIsModalOpen }) => {
     }
   }
 
-  if (dbFriendly in categoryMapping) {
-    // console.log('dbFriendly: ' + dbFriendly)
+  if (selectedCategory in categoryMapping) {
     dataToShow = products['hazirlik'].filter((item) =>
-      item.image.includes(categoryMapping[dbFriendly])
+      item.image.includes(categoryMapping[selectedCategory])
     )
-  } else if (!(dbFriendly in categoryMapping)) {
-    switch (dbFriendly) {
+  } else {
+    switch (selectedCategory) {
       case 'pisiriciler':
         dataToShow = products['modul']
         break
@@ -72,7 +69,7 @@ const Products = ({ products, dbFriendly, setIsModalOpen }) => {
       case 'camasir':
         dataToShow = products['camasirhane']
         break
-      case 'medikal urunler':
+      case 'medikal':
         dataToShow = products['medikal']
         break
 
@@ -81,14 +78,9 @@ const Products = ({ products, dbFriendly, setIsModalOpen }) => {
     }
   }
 
-  if (!dataToShow) {
-    return <div>Bu kategoriye ait ürün bulunamadı.</div>
-  }
-
   return (
     <div className="custom-container flex flex-wrap justify-between items-center gap-5">
-      {dataToShow.map((item, index) => {
-        // console.log(item)
+      {dataToShow.map((item) => {
         return (
           <figure
             key={item.id}
