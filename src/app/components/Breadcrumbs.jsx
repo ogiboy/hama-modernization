@@ -2,10 +2,17 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 const Breadcrumbs = () => {
   const pathname = usePathname()
-  const userFriendly = pathname.split('/tr/').filter((path) => path)
+  const localePrefix = pathname.includes('/tr/')
+    ? '/tr/'
+    : pathname.includes('/en/')
+    ? '/en/'
+    : '/'
+  const userFriendly = pathname.split(localePrefix).filter((path) => path)
+  const t = useTranslations('NavbarBreadcrumbs')
 
   return (
     <nav className="border-b-4 border-mainColor w-fit pb-[5px]">
@@ -13,39 +20,19 @@ const Breadcrumbs = () => {
         href="/"
         className="font-robotoSlab text-[#0d0d0d] hover:text-mainColor"
       >
-        Anasayfa{' '}
+        {t('homepage')}{' '}
       </Link>
 
       {userFriendly &&
         userFriendly.map((path) => {
-          let crumb = path
-
-          switch (crumb) {
-            case 'about':
-              crumb = 'Hakkımızda'
-              break
-
-            case 'services':
-              crumb = 'Hizmetlerimiz'
-              break
-
-            case 'work':
-              crumb = 'Ürünlerimiz'
-              break
-
-            case 'contact-us':
-              crumb = 'İletişim'
-              break
-
-            default:
-              crumb = ' '
-          }
+          let crumb = t(path) || ''
 
           return (
             <Link
               key={path}
               href={path}
               className="font-robotoSlab text-[#959494] hover:text-mainColor"
+              onClick={(e) => e.preventDefault()}
             >
               <span>/</span> {crumb}
             </Link>

@@ -12,42 +12,44 @@ import slide6 from '../../../public/home-slider-images/slide6.jpg'
 
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'motion/react'
+import { useTranslations } from 'next-intl'
 
 const HomepageSlider = () => {
   const [slideIndex, setSlideIndex] = useState(0)
   const [isImageLoaded, setIsImageLoaded] = useState(false)
   const intervalRef = useRef(null)
+  const t = useTranslations('HomepageSlider')
   let sliderInterval = 5000
   const slideImages = [
     {
       id: 1,
       src: slide1,
-      alt: 'Hotel Mutfakları',
+      alt: t('hotel'),
     },
     {
       id: 2,
       src: slide2,
-      alt: 'Show Mutfağı',
+      alt: t('show'),
     },
     {
       id: 3,
       src: slide3,
-      alt: 'Açık Büfeler',
+      alt: t('bufe'),
     },
     {
       id: 4,
       src: slide4,
-      alt: 'Cafeteria Mutfakları',
+      alt: t('cafe'),
     },
     {
       id: 5,
       src: slide5,
-      alt: 'Restaurant Mutfakları',
+      alt: t('rest'),
     },
     {
       id: 6,
       src: slide6,
-      alt: 'Çamaşırhaneler',
+      alt: t('camasir'),
     },
   ]
 
@@ -128,7 +130,7 @@ const HomepageSlider = () => {
             className="ml-[34px]"
           >
             <p className="tracking-[2px] font-normal font-montserrat text-white text-xl whitespace-nowrap">
-              ENDÜSTRİYEL MUTFAK
+              {t('heading')}
             </p>
             <p className="text-[46px] w-1/2 text-white uppercase font-bold font-montserrat leading-[72px] whitespace-normal">
               {slideImages[slideIndex].alt}

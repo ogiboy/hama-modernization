@@ -120,5 +120,21 @@
   },
   "toTop": {
     "text": "To Top"
+  },
+  "NavbarBreadcrumbs": {
+    "homepage": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "work": "Products",
+    "contact-us": "Contact Us"
+  },
+  "HomepageSlider": {
+    "heading": "INDUSTRIAL KITCHEN",
+    "hotel": "Hotel Kitchens",
+    "show": "Show Kitchens",
+    "bufe": "Buffets",
+    "cafe": "Cafeteria Kitchens",
+    "rest": "Restaurant Kitchens",
+    "camasir": "Laundry Facilities"
   }
 }

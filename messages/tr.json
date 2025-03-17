@@ -119,5 +119,21 @@
   },
   "toTop": {
     "text": "Yukarı Çık"
+  },
+  "NavbarBreadcrumbs": {
+    "homepage": "Anasayfa",
+    "about": "Kurumsal",
+    "services": "Hizmetlerimiz",
+    "work": "Ürünlerimiz",
+    "contact-us": "İletişim"
+  },
+  "HomepageSlider": {
+    "heading": "ENDÜSTRİYEL MUTFAK",
+    "hotel": "Hotel Mutfakları",
+    "show": "Show Mutfağı",
+    "bufe": "Açık Büfeler",
+    "cafe": "Cafeteria Mutfakları",
+    "rest": "Restaurant Mutfakları",
+    "camasir": "Çamaşırhaneler"
   }
 }
