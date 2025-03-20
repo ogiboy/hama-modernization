@@ -56,7 +56,7 @@ const MainNavbar = () => {
     const unsubY = navMode.on('change', navFunc)
 
     return () => unsubY()
-  }, [])
+  }, [navMode])
 
   return (
     <>

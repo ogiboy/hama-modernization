@@ -7,8 +7,10 @@ import WorkButtons from '@/app/components/WorkButtons'
 
 // import { revalidatePath } from 'next/cache'
 import { useState, useEffect } from 'react'
+import { useTranslations } from 'next-intl'
 
 const Work = () => {
+  const t = useTranslations('work')
   const [selectedCategory, setCategory] = useState('pisiriciler')
   const [products, setProducts] = useState({})
   const [isModalOpen, setIsModalOpen] = useState({
@@ -52,12 +54,13 @@ const Work = () => {
   return (
     <>
       <div className="relative">
-        <PageHeader heading="Ürünlerimiz" paragraph="" />
+        <PageHeader heading={t('heading')} paragraph="" />
 
-        <main className="my-[120px]">
+        <main className="custom-container my-[120px] flex flex-col justify-between items-center">
           <WorkButtons
             handleBtnClick={handleBtnClick}
             selectedCategory={selectedCategory}
+            t={t}
           />
 
           <Products
@@ -68,7 +71,10 @@ const Work = () => {
         </main>
       </div>
       {isModalOpen.isOpen && (
-        <article className="bg-[#5a5757]/80 fixed top-0 left-0 w-full h-full overflow-visible z-[999]">
+        <article
+          onClick={() => setIsModalOpen((p) => ({ ...p, isOpen: false }))}
+          className="bg-[#5a5757]/80 fixed top-0 left-0 w-full h-full overflow-visible z-[999] flex justify-center"
+        >
           <ProductDetails
             item={isModalOpen.item}
             setIsModalOpen={setIsModalOpen}

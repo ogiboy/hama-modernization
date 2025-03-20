@@ -9,6 +9,7 @@ import { notFound } from 'next/navigation'
 import MainNavbar from '../components/MainNavbar'
 import Footer from '../components/Footer'
 import ToTop from '../components/ToTop'
+import LangContainer from '../components/LangContainer'
 
 export const metadata = {
   title: 'Hama Endüstriyel Mutfak',
@@ -46,6 +47,7 @@ export default async function RootLayout({ children, params }) {
       <body className="antialiased scroll-smooth">
         <NextIntlClientProvider messages={messages}>
           <MainNavbar />
+          <LangContainer />
           <ToTop />
           {children}
           <Footer />

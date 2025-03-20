@@ -11,11 +11,9 @@ import { useTranslations } from 'next-intl'
 const ToTop = () => {
   const { scrollYProgress } = useScroll()
   const isVisible = useMotionValue(0)
-
   const t = useTranslations('toTop')
 
   useMotionValueEvent(scrollYProgress, 'change', (value) => {
-    // console.log('value: ' + value * 100)
     isVisible.set(value * 100 > 80 ? 1 : 0)
   })
 

@@ -11,13 +11,13 @@ const ProductDetails = ({ item, setIsModalOpen }) => {
   )
 
   return (
-    <div className="bg-[#f9f9f9] p-[15px] w-[836px] fixed left-[152px] top-[88px] z-[999] rounded-[4px] shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
+    <div className="bg-[#f9f9f9] p-[15px] w-[836px] fixed top-[88px] z-[999] rounded-[4px] shadow-[0_10px_25px_rgba(0,0,0,0.5)]">
       <div className=" w-[806px] h-[543px] p-5 overflow-y-scroll flex flex-col items-center justify-between">
         <h1 className="font-bold font-sans text-[16px] text-[#444] text-center">
           {title}
         </h1>
 
-        <figure className="flex flex-col justify-between items-center">
+        <figure className="flex flex-col justify-between items-center w-full h-full">
           <Image
             src={image}
             width={200}
@@ -25,7 +25,7 @@ const ProductDetails = ({ item, setIsModalOpen }) => {
             alt={title}
             className="my-[10px]"
           />
-          <figcaption className="text-left">
+          <figcaption className="text-left w-full">
             {texts.map((text, index) => {
               return (
                 <p

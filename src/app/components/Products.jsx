@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 const Products = ({ products, selectedCategory, setIsModalOpen }) => {
   const categoryMapping = {
@@ -78,24 +79,42 @@ const Products = ({ products, selectedCategory, setIsModalOpen }) => {
     }
   }
 
+  if (!dataToShow || dataToShow.length === 0) {
+    return <div>Bu kategoriye ait ürün bulunamadı.</div>
+  }
+
   return (
-    <div className="custom-container flex flex-wrap justify-between items-center gap-5">
+    <div className="flex flex-wrap justify-between items-center gap-14">
       {dataToShow.map((item) => {
+        const [isHovered, setIsHovered] = useState(false)
+
         return (
           <figure
             key={item.id}
-            className="w-[329px] border border-[#ccc] rounded-[5px] p-5 text-center"
+            className="w-[30%] border border-[#ccc] rounded-[5px] p-5 text-center"
           >
             <div
               onClick={() => handleDetailsModal(item)}
-              className="cursor-pointer transition-all ease-in-out duration-500 bg-gradient-to-t from-white hover:to-slate-400"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="cursor-pointer relative"
             >
               <Image
                 src={item.image}
                 alt={item.title}
                 width={300}
                 height={400}
+                className={`transition-all duration-[10s] ease-in-out ${
+                  isHovered ? 'scale-125' : 'scale-100'
+                }`}
               />
+              <div
+                className={`pointer-events-none absolute transition-all duration-500 rounded-[5px] bg-white/70 ${
+                  isHovered
+                    ? 'bottom-0 right-0 w-full h-full origin-bottom-righ opacity-70'
+                    : 'bottom-0 right-0 w-0 h-0 origin-bottom-right'
+                }`}
+              ></div>
             </div>
             <figcaption className="text-lg font-bold font-montserrat uppercase mt-[15px]">
               <p className="truncate">{item.title}</p>

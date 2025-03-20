@@ -11,7 +11,7 @@
   "dependencies": {
     "@next/third-parties": "^15.1.6",
     "motion": "^12.4.3",
-    "next": "^15.2.2",
+    "next": "^15.2.3",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

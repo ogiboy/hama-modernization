@@ -2,9 +2,9 @@ import { Link } from '@/i18n/routing'
 
 export default function NotFound() {
   return (
-    <div>
-      <h2>Not Found</h2>
-      <p>Could not find requested resource</p>
+    <div className="w-screen h-screen bg-mainColor/90 font-robotoSlab italic flex flex-col justify-center items-center pb-5">
+      <h2 className="text-[#f9f9f9] ">Not Found</h2>
+      <p className="text-[#f9f9f9] ">Could not find requested resource</p>
       <Link href="/">Return Home</Link>
     </div>
   )

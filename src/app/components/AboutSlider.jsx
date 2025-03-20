@@ -7,7 +7,7 @@ import aboutus4 from '../../../public/aboutus-images/aboutus4.png'
 
 import Image from 'next/image'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { HiArrowLongLeft, HiArrowLongRight } from 'react-icons/hi2'
 import { IconContext } from 'react-icons'
 
@@ -40,13 +40,13 @@ const AboutSlider = () => {
     },
   ]
 
-  const startSlideShow = () => {
+  const startSlideShow = useCallback(() => {
     if (!intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setSlideIndex((prevIndex) => (prevIndex + 1) % slideImages.length)
       }, sliderInterval)
     }
-  }
+  }, [sliderInterval, slideImages.length])
 
   const stopSlideShow = () => {
     clearInterval(intervalRef.current)
@@ -59,7 +59,7 @@ const AboutSlider = () => {
     }
 
     return () => stopSlideShow()
-  }, [isImageLoaded])
+  }, [isImageLoaded, startSlideShow])
 
   const handleImageLoad = () => setIsImageLoaded(true)
 

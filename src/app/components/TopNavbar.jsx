@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import LangSwitcher from './LangSwitcher'
 
 import { Link } from '@/i18n/routing'
 import { motion } from 'motion/react'
@@ -34,7 +33,6 @@ const TopNavbar = ({ navLinks, pathname, isNavSticky }) => {
             )
           })}
         </ul>
-        <LangSwitcher />
       </nav>
     </motion.header>
   )

@@ -10,7 +10,7 @@ import slide4 from '../../../public/home-slider-images/slide4.jpg'
 import slide5 from '../../../public/home-slider-images/slide5.jpg'
 import slide6 from '../../../public/home-slider-images/slide6.jpg'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { motion } from 'motion/react'
 import { useTranslations } from 'next-intl'
 
@@ -53,13 +53,13 @@ const HomepageSlider = () => {
     },
   ]
 
-  const startSlideShow = () => {
+  const startSlideShow = useCallback(() => {
     if (!intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setSlideIndex((prevIndex) => (prevIndex + 1) % slideImages.length)
       }, sliderInterval)
     }
-  }
+  }, [sliderInterval, slideImages.length])
 
   const stopSlideShow = () => {
     clearInterval(intervalRef.current)
@@ -72,7 +72,7 @@ const HomepageSlider = () => {
     }
 
     return () => stopSlideShow()
-  }, [isImageLoaded])
+  }, [isImageLoaded, startSlideShow])
 
   const handleImageLoad = () => {
     setIsImageLoaded(true)

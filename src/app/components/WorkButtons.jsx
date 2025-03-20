@@ -1,8 +1,4 @@
-import { useTranslations } from 'next-intl'
-
-const WorkButtons = ({ handleBtnClick, selectedCategory }) => {
-  const t = useTranslations('work.categories')
-
+const WorkButtons = ({ handleBtnClick, selectedCategory, t }) => {
   const categories = [
     { key: 'pisiriciler', label: 'Pişiriciler' },
     { key: 'firin', label: 'Fırın' },
@@ -23,7 +19,7 @@ const WorkButtons = ({ handleBtnClick, selectedCategory }) => {
   ]
 
   return (
-    <div className="custom-container flex justify-evenly items-center flex-wrap pb-[30px]">
+    <div className="flex justify-evenly items-center flex-wrap pb-[30px]">
       {categories.map((item, index) => {
         return (
           <button
@@ -35,7 +31,7 @@ const WorkButtons = ({ handleBtnClick, selectedCategory }) => {
             onClick={() => handleBtnClick(item.key)}
             key={item.key}
           >
-            {t(item.key)}
+            {t(`categories.${item.key}`)}
           </button>
         )
       })}
